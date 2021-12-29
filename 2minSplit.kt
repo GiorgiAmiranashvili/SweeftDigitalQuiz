@@ -1,7 +1,7 @@
 fun main() {
     var n = 362; //We can insert any value! but value for 7.35$ is 735
     var k = 0;
-        while (n>50) {
+        while (n>=50) {
            
             n=n-50;
             k++;
