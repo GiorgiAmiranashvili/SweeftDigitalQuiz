@@ -3,19 +3,19 @@ fun main() {
     var startingPosition = 0;
     var a = 1;
     var b = 2;
-    var answer = 0;
-     fun countWays(index: Int) {
+    var stearsCount = 0;
+     fun countVariants(index: Int) {
        
          if (index + a <= n){
-            if (index + a == n) answer++;
-            countWays(index + a); 
+            if (index + a == n) stearsCount++;
+            countVariants(index + a); 
          } 
          if (index + b <= n){
-            if (index + b == n) answer++; 
-            countWays(index + b); 
+            if (index + b == n) stearsCount++; 
+            countVariants(index + b); 
          }
     
      }
-    countWays(startingPosition);
-        println(answer);
+    countVariants(startingPosition);
+        println(stearsCount);
     }
